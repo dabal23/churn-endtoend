@@ -161,17 +161,44 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Airflow logs and sensitive files
 airflow/logs/
-airflow/other/airflow/other/encoded-axis-430602-s0-d2bc2db2ceda.json
-airflow/.env
+airflow/other/
 
+# MLflow artifacts and runs
 mlruns/
-mlartifacts/
+mlartifacts/encoded-axis-430602-s0-d2bc2db2ceda.json
 
+# Jupyter Notebook checkpoints
+notebook/.ipynb_checkpoints/
+
+# GCP credentials (just in case there are more)
+*.json
+
+# Environment Variables
+.env
+*.env
+
+# Docker files and directories
+*.pid
+*.log
+*.sock
+*.lock
+
+# Virtual environment directories
 env/
 venv/
 .venv/
 
-notebook/mlruns
+# Python virtual environments
+Pipfile.lock
 
-dashboard/mlartifacts/
+# IDE-specific files
+.idea/
+.vscode/
+
